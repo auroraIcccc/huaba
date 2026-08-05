@@ -1,93 +1,469 @@
 <!DOCTYPE HTML>
-<!--
-	Massively by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
 <html>
-	<head>
-		<title>留言板 - 陈华八</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+<head>
 
-				<!-- Header -->
-					<header id="header">
-						<a href="index.html" class="logo">陈华八</a>
-					</header>
+	<title>留言板 - 陈华八</title>
 
-				<!-- Nav -->
-					<nav id="nav">
-						<ul class="links">
-							<li><a href="index.html">华八总览</a></li>
-							<li><a href="index.html#main">华八人物</a></li>
-							<li class="active"><a href="elements.html">留言板</a></li>
-						</ul>
-						<ul class="icons">
-							<li><a href="https://www.douyin.com/user/MS4wLjABAAAAcYTWLi9mm1Mf-Pi3HhFhqZhxnVBVGh2YtK2PGMo4fjg?from_tab_name=main&is_search=0&list_name=fans&nt=0" target="_blank" class="icon brands fa-video"><span class="label">抖音</span></a></li>
-						</ul>
-					</nav>
+	<meta charset="utf-8" />
 
-				<!-- Main -->
-					<div id="main">
-						<section class="post">
-							<header class="major">
-								<h1>留言板</h1>
-								<p>欢迎各位华八儿女和访客留下你的足迹</p>
-							</header>
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 
-							<div id="cusdis_thread"
-							  data-host="https://cusdis.com"
-							  data-app-id="952aa49f-7bc2-4dc5-aad2-99ab2faa74b0"
-							  data-page-id="messages"
-							  data-page-url="https://huaba.gbchan.top/elements.html"
-							  data-page-title="留言板 - 陈华八"
-							></div>
-						</section>
-					</div>
+	<link rel="stylesheet" href="assets/css/main.css" />
 
-				<!-- Copyright -->
-					<div id="copyright">
-						<ul><li>&copy; 陈华八</li><li>Design: <a href="https://github.com/auroraIcccc">gbchan</a></li></ul>
-					</div>
+	<noscript>
+		<link rel="stylesheet" href="assets/css/noscript.css" />
+	</noscript>
+
+
+	<style>
+
+		/* Cusdis 容器 */
+
+		#cusdis_thread {
+			width: 100%;
+			min-height: 500px;
+		}
+
+
+		/* Cusdis iframe */
+
+		#cusdis_thread iframe {
+
+			width: 100% !important;
+
+			border: none !important;
+
+			min-height: 500px;
+
+			overflow: hidden;
+
+		}
+
+
+
+		/* 防止 Massively 模板裁剪 */
+
+		.post {
+
+			overflow: visible !important;
+
+		}
+
+
+
+		@media screen and (max-width:736px){
+
+
+			#cusdis_thread iframe {
+
+				min-height:650px;
+
+			}
+
+		}
+
+
+	</style>
+
+
+</head>
+
+
+
+<body class="is-preload">
+
+
+<div id="wrapper">
+
+
+
+	<!-- Header -->
+
+	<header id="header">
+
+		<a href="index.html" class="logo">
+
+			陈华八
+
+		</a>
+
+	</header>
+
+
+
+
+
+	<!-- Nav -->
+
+	<nav id="nav">
+
+
+		<ul class="links">
+
+
+			<li>
+
+				<a href="index.html">
+
+					华八总览
+
+				</a>
+
+			</li>
+
+
+
+			<li>
+
+				<a href="index.html#main">
+
+					华八人物
+
+				</a>
+
+			</li>
+
+
+
+			<li class="active">
+
+				<a href="elements.html">
+
+					留言板
+
+				</a>
+
+			</li>
+
+
+		</ul>
+
+
+
+		<ul class="icons">
+
+
+			<li>
+
+				<a href="https://www.douyin.com/user/MS4wLjABAAAAcYTWLi9mm1Mf-Pi3HhFhqZhxnVBVGh2YtK2PGMo4fjg?from_tab_name=main&is_search=0&list_name=fans&nt=0"
+
+				target="_blank"
+
+				class="icon brands fa-video">
+
+
+					<span class="label">
+
+						抖音
+
+					</span>
+
+
+				</a>
+
+
+			</li>
+
+
+		</ul>
+
+
+	</nav>
+
+
+
+
+
+
+
+	<!-- Main -->
+
+	<div id="main">
+
+
+		<section class="post">
+
+
+
+			<header class="major">
+
+
+				<h1>
+
+					留言板
+
+				</h1>
+
+
+
+				<p>
+
+					欢迎各位华八儿女和访客留下你的足迹<br>
+
+					(留言需审核后才能显示，请耐心等待)
+
+				</p>
+
+
+			</header>
+
+
+
+
+
+
+			<!-- Cusdis -->
+
+			<div id="cusdis_thread"
+
+
+				data-host="https://cusdis.com"
+
+
+				data-app-id="952aa49f-7bc2-4dc5-aad2-99ab2faa74b0"
+
+
+				data-page-id="messages"
+
+
+				data-page-url="https://huaba.gbchan.top/elements.html"
+
+
+				data-page-title="留言板 - 陈华八">
+
 
 			</div>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
 
-			<!-- Cusdis 加载 -->
-			<script async defer src="https://cusdis.com/js/cusdis.es.js"></script>
 
-			<!-- Cusdis iframe 自动高度 -->
-			<script>
-			  window.addEventListener('message', function (event) {
-			    if (event.origin === 'https://cusdis.com') {
-			      try {
-			        var data = JSON.parse(event.data);
-			        if (data && data.event === 'resize' && data.data) {
-			          var iframe = document.querySelector('#cusdis_thread iframe');
-			          if (iframe) {
-			            iframe.style.height = data.data + 'px';
-			            iframe.style.overflow = 'hidden';
-			          }
-			        }
-			      } catch (e) {}
-			    }
-			  });
-			</script>
 
-	</body>
+		</section>
+
+
+	</div>
+
+
+
+
+
+
+
+	<!-- Copyright -->
+
+
+	<div id="copyright">
+
+
+		<ul>
+
+
+			<li>
+
+				&copy; 陈华八
+
+			</li>
+
+
+			<li>
+
+				Design:
+
+				<a href="https://github.com/auroraIcccc">
+
+					gbchan
+
+				</a>
+
+			</li>
+
+
+		</ul>
+
+
+	</div>
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+<!-- Scripts -->
+
+
+<script src="assets/js/jquery.min.js"></script>
+
+<script src="assets/js/jquery.scrollex.min.js"></script>
+
+<script src="assets/js/jquery.scrolly.min.js"></script>
+
+<script src="assets/js/browser.min.js"></script>
+
+<script src="assets/js/breakpoints.min.js"></script>
+
+<script src="assets/js/util.js"></script>
+
+<script src="assets/js/main.js"></script>
+
+
+
+
+
+<!-- Cusdis -->
+
+<script async defer src="https://cusdis.com/js/cusdis.es.js"></script>
+
+
+
+
+
+<!-- Cusdis iframe 自动高度修复 -->
+
+
+<script>
+
+
+window.addEventListener("message", function(event){
+
+
+
+	// 只接受 Cusdis 消息
+
+	if(event.origin !== "https://cusdis.com"){
+
+		return;
+
+	}
+
+
+
+
+	const iframe = 
+	document.querySelector("#cusdis_thread iframe");
+
+
+
+	if(!iframe){
+
+		return;
+
+	}
+
+
+
+
+
+	try{
+
+
+		const data =
+
+			typeof event.data === "string"
+
+			?
+
+			JSON.parse(event.data)
+
+			:
+
+			event.data;
+
+
+
+
+		if(data && data.event === "resize"){
+
+
+
+			const height =
+
+				parseInt(data.data);
+
+
+
+			if(height > 0){
+
+
+				iframe.style.height =
+
+					height + "px";
+
+
+				iframe.style.overflow =
+
+					"hidden";
+
+
+			}
+
+
+		}
+
+
+	}
+
+	catch(e){
+
+
+		console.log(
+			"Cusdis resize error:",
+			e
+		);
+
+
+	}
+
+
+
+});
+
+
+
+
+
+
+
+// 防止首次加载高度异常
+
+
+setTimeout(function(){
+
+
+
+	const iframe =
+
+		document.querySelector("#cusdis_thread iframe");
+
+
+
+	if(iframe){
+
+
+		iframe.style.minHeight =
+
+			"500px";
+
+
+	}
+
+
+
+},2000);
+
+
+
+</script>
+
+
+
+
+</body>
+
 </html>

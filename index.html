@@ -156,27 +156,47 @@
 
 					</div>
 
-				<!-- Footer（Cusdis 轻量互动留言板） -->
-		<!-- Footer（Cusdis 留言板） -->
-<footer id="footer" style="padding: 3rem 2rem;">
-    <section style="width: 100%; max-width: 800px; margin: 0 auto;">
-        <h2 style="font-size: 1.5rem; margin-bottom: 1.5rem; text-align: center;">💬 欢迎留下你的留言</h2>
-        
-        <!-- Cusdis 挂载容器 -->
-        <div id="cusdis_thread"
-          data-host="https://cusdis.com"
-          data-app-id="0a9acae6-e821-40ec-a70f-4d5f57780846"
-          data-page-id="index"
-          data-page-url="https://huaba.gbchan.top"
-          data-page-title="陈华八"
-        ></div>
-        <script async defer src="https://cusdis.com/js/cusdis.es.js"></script>
-    </section>
-</footer>
+				<!-- Footer（Cusdis 动态自适应留言板） -->
+				<footer id="footer" style="padding: 4rem 2rem; background-color: rgba(255, 255, 255, 0.05); border-top: solid 1px rgba(212, 212, 212, 0.2);">
+					<section style="width: 100%; max-width: 900px; margin: 0 auto;">
+						<h2 style="font-size: 1.8rem; margin-bottom: 2rem; text-align: center; letter-spacing: 2px;">💬 欢迎留下你的留言</h2>
+						
+						<!-- Cusdis 挂载容器 -->
+						<div id="cusdis_thread"
+						  data-host="https://cusdis.com"
+						  data-app-id="0a9acae6-e821-40ec-a70f-4d5f57780846"
+						  data-page-id="index"
+						  data-page-url="https://huaba.gbchan.top"
+						  data-page-title="陈华八"
+						  style="min-height: 300px; width: 100%;"
+						></div>
+						<script async defer src="https://cusdis.com/js/cusdis.es.js"></script>
+
+						<!-- 自动高度调整脚本：消除 iframe 内部滚动条 -->
+						<script>
+						  window.addEventListener('message', function (event) {
+						    if (event.origin === 'https://cusdis.com') {
+						      try {
+						        const data = JSON.parse(event.data);
+						        if (data && data.event === 'resize' && data.data) {
+						          const iframe = document.querySelector('#cusdis_thread iframe');
+						          if (iframe) {
+						            iframe.style.height = data.data + 'px';
+						            iframe.style.overflow = 'hidden';
+						          }
+						        }
+						      } catch (e) {
+						        // 忽略非 JSON 消息
+						      }
+						    }
+						  });
+						</script>
+					</section>
+				</footer>
 
 				<!-- Copyright -->
 					<div id="copyright">
-						<ul><li>&copy; 陈华八</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+						<ul><li>&copy; 陈华八</li><li>Design: <a href="https://github.com/auroraIcccc">gbchan</a></li></ul>
 					</div>
 
 			</div>
